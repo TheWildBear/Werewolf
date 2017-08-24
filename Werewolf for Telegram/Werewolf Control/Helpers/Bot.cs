@@ -60,13 +60,13 @@ namespace Werewolf_Control.Helpers
                     RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry64)
                         .OpenSubKey("SOFTWARE\\Werewolf");
 #if DEBUG
-            TelegramAPIKey = "380154525:AAEmygXzg1I2CWj0LucOemoFlCeFawfkGPs";
+            TelegramAPIKey = "YOUR_TOKEN";
 #elif RELEASE
-            TelegramAPIKey = "380154525:AAEmygXzg1I2CWj0LucOemoFlCeFawfkGPs";
+            TelegramAPIKey = "YOUR_TOKEN";
 #elif RELEASE2
-            TelegramAPIKey = "380154525:AAEmygXzg1I2CWj0LucOemoFlCeFawfkGPs";
+            TelegramAPIKey = "YOUR_TOKEN";
 #elif BETA
-            TelegramAPIKey = "380154525:AAEmygXzg1I2CWj0LucOemoFlCeFawfkGPs";
+            TelegramAPIKey = "YOUR_TOKEN";
 #endif
             Api = new Client(TelegramAPIKey, Path.Combine(Directory.GetParent(RootDirectory).FullName, @"Logs"));
 

@@ -74,13 +74,13 @@ namespace Werewolf_Node
                     RegistryKey.OpenBaseKey(RegistryHive.LocalMachine, RegistryView.Registry64)
                         .OpenSubKey("SOFTWARE\\Werewolf");
 #if DEBUG
-            APIToken = "380154525:AAEmygXzg1I2CWj0LucOemoFlCeFawfkGPs";
+            APIToken = "YOUR_TOKEN";
 #elif RELEASE
-            APIToken = "380154525:AAEmygXzg1I2CWj0LucOemoFlCeFawfkGPs";
+            APIToken = "YOUR_TOKEN";
 #elif RELEASE2
-            APIToken = "380154525:AAEmygXzg1I2CWj0LucOemoFlCeFawfkGPs";
+            APIToken = "YOUR_TOKEN";
 #elif BETA
-            APIToken = "380154525:AAEmygXzg1I2CWj0LucOemoFlCeFawfkGPs";
+            APIToken = "YOUR_TOKEN";
 #endif
             Console.WriteLine("Creating Api Instance");
             Api = new Client(APIToken, Path.Combine(Directory.GetParent(RootDirectory).FullName, "Logs"));
