@@ -1,23 +1,22 @@
-# Werewolf for Telegram
+# Werewolf for Telegram on Linux
 
-This is the main repo for Werewolf for Telegram.
+This is the main repo for Werewolf for Telegram on Linux.
 
-For language file updates, please submit the xml file on Telegram to the [support chat](http://telegram.me/werewolfsupport) and ask for assistance
+For language file updates, please submit the xml file on Telegram to the [support chat](http://telegram.me/werewolfsupport) and ask for assistance.
 
 ### Visual Studio Team Services Continuous Integration		
 ![build status](https://parabola949.visualstudio.com/_apis/public/build/definitions/c0505bb4-b972-452b-88be-acdc00501797/2/badge)
 
 ## Requirements
 * .NET Framework 4.5.2
-* SQL Server (I am using 2014) / SQL Server 2016
-* Windows Server
+* SQL Server 2017
 
 ## Setup
 
 To set up werewolf on a private server, follow these steps:
 
 1. Go to [BotFather](https://telegram.me/BotFather) and create a new bot.  Answer all of the questions it asks, and you will receive an API Token.
-   * On your server, open regedit, and go to `HKLM\SOFTWARE\`, create a new Key named `Werewolf` (HKLM - HKEY_LOCAL_MACHINE)
+   * In the files (Program.cs and Bot.cs insert your Key where YOUR_TOKEN is written)
    * In the new key create a new string value named `ProductionAPI`.  
    * Paste your API token here.
 2. Grab the Werewolf Database.sql file from this repository
